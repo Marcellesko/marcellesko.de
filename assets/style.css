@@ -207,14 +207,6 @@ body {
     padding-right: 0.75rem;
 }
 
-.below-link-item-link-image {
-    margin-top: 1rem;
-    height: 40px;
-    width: 264px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-}
-
 .info-details {
     margin-top: 2rem;
     display: flex;
