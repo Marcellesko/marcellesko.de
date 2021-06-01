@@ -389,6 +389,10 @@ footer {
         width: 550px;
         margin-top: 2.5rem;
     }
+    .discord-images {
+        width: 550px;
+        margin-top: 2.5rem;
+    }
     .info-screenshot {
         width: 175px;
     }
@@ -427,6 +431,11 @@ footer {
         gap: 1.5rem;
         width: 375px;
     }
+    .discord-images {
+        justify-content: center;
+        gap: 1.5rem;
+        width: 375px;
+    }
     .info-screenshot {
         width: 225px;
     }
@@ -457,6 +466,9 @@ footer {
         width: 300px;
     }
     .info-images {
+        width: 300px;
+    }
+    .discord-images {
         width: 300px;
     }
     .linkbox {
