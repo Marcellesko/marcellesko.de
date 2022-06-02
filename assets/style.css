@@ -14,7 +14,6 @@ body {
     justify-content: space-between;
     flex-direction: column;
 
-    overflow: auto;
     min-height: 100vh;
 
     font-family: Arial, sans-serif;
@@ -29,7 +28,7 @@ body {
 
     z-index: -1;
 
-    background-image: url("./images/marcellesko_background_1_compressed.jpg");
+    background-image: url("./images/background_2_compressed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -70,6 +69,7 @@ body {
     line-height: 5rem;
     width: 800px;
     margin-top: -0.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     text-decoration: none;
 }
@@ -93,7 +93,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
-    margin: 2rem;
+    margin: 6rem 2rem 2rem 2rem;
 }
 
 .linkbox-item {
@@ -101,6 +101,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.linkbox-item-text{
+    font-size: large;
 }
 
 .linkbox-item-link {
@@ -122,11 +126,7 @@ body {
 }
 
 .linkbox-item-link:hover {
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.linkbox-item-text {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .linkbox-info {
@@ -156,9 +156,10 @@ body {
 }
 
 .below-link-item {
-    padding: 1.5rem 1.75rem 1.75rem 1.75rem;
-    min-width: 279px;
-    height: 90px;
+    margin-bottom: 4rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    width: 335px;
+    min-height: 85px;
     text-align: center;
     border: 2px solid white;
     border-left: 0;
@@ -167,6 +168,7 @@ body {
 }
 
 .below-link-title {
+    font-size: large;
     color: white;
     font-weight: 800;
     margin-bottom: 0.25rem;
@@ -193,22 +195,36 @@ body {
     margin-bottom: 0.25rem;
 }
 
-.below-link-images {
+.below-link-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 
+.below-link-text {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 50px;
+    max-width: 110px;
+    padding: 0.15rem 0.35rem 0.15rem 0.35rem;
+    margin: 0 0.2rem 0.25rem 0.2rem;
+}
+
 .social-media-logo {
     width: 45px;
     height: 45px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 0 0.75rem 0.75rem 0.75rem;
 }
 
 .info-details {
     margin-top: 2rem;
+    margin-bottom: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,24 +272,18 @@ body {
 }
 
 .info-images {
-    margin-top: 2rem;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.discord-images {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 800px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .info-screenshot {
     border: 2px solid white;
     width: 225px;
+    height: 127px;
 }
 
 .info-paragraph-link {
@@ -388,13 +398,11 @@ footer {
     .info-images {
         width: 550px;
         margin-top: 2.5rem;
+        gap: 1.5rem;
     }
     .discord-images {
         width: 550px;
         margin-top: 2.5rem;
-    }
-    .info-screenshot {
-        width: 175px;
     }
     .impressum {
         width: 550px;
