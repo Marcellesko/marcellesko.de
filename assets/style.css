@@ -276,6 +276,25 @@ body {
     margin-top: 2rem;
 }
 
+.info-paragraph-small{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 2.7rem;
+    margin-top: 3rem;
+}
+
+.info-paragraph-small-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.info-paragraph-small-text{
+    width: 32rem;
+}
+
 .info-images {
     margin-top: 1rem;
     width: 800px;
@@ -361,6 +380,7 @@ body {
 }
 
 .content-list-datapack-title{
+    text-align: left;
     color: white;
     font-size: 1.2rem;
     margin: 0 0 4px 0;
@@ -477,6 +497,12 @@ footer {
     }
     .info-paragraph {
         width: 550px;
+    }
+    .info-paragraph-small{
+        justify-content: center;
+    }
+    .info-paragraph-small-text{
+        width: 100%;
     }
     .info-images {
         width: 550px;
