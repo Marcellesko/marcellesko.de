@@ -222,7 +222,10 @@ body {
 .social-media-logo {
     width: 45px;
     height: 45px;
-    padding: 0 0.75rem 0.75rem 0.75rem;
+}
+
+.social-media-item{
+    margin: 0 0.75rem 0.75rem 0.75rem;
 }
 
 .info-details {
@@ -302,10 +305,10 @@ body {
 }
 
 .content-list-item{
-    height: 75px;
+    height: 5rem;
     width: 100%;
     border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -337,9 +340,37 @@ body {
 }
 
 .content-list-item-identification{
-    height: 75px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.content-list-datapack{
+    min-height: 5rem;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-list-datapack-text{
+    width: 85%;
+    margin: 1rem;
+}
+
+.content-list-datapack-title{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 4px 0;
+}
+
+.content-list-datapack-icon{
+    height: 3rem;
+    width: 2.9rem;
+    margin: 1rem;
+    display: flex;
     align-items: center;
 }
 
