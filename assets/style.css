@@ -47,7 +47,7 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .overtitle {
@@ -155,7 +155,7 @@ body {
     column-gap: 5rem;
 }
 
-.below-link-item {
+.below-link-box {
     margin-bottom: 4rem;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
     width: 335px;
@@ -183,26 +183,26 @@ body {
     width: 25px;
 }
 
-.below-link-item-links {
+.below-link-box-links {
     padding-top: 0.75rem;
     display: flex;
     flex-direction: column;
 }
 
-.below-link-item-link {
+.below-link-box-link {
     color: white;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
-.below-link-content {
+.below-link-content-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 
-.below-link-text {
+.below-link-content {
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -210,21 +210,26 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    height: 50px;
     max-width: 110px;
     padding: 0.15rem 0.35rem 0.15rem 0.35rem;
     margin: 0 0.2rem 0.25rem 0.2rem;
 }
 
+.below-link-content-text{
+    text-align: justify;
+}
+
 .social-media-logo {
     width: 45px;
     height: 45px;
-    padding: 0 0.75rem 0.75rem 0.75rem;
+}
+
+.social-media-item{
+    margin: 0 0.75rem 0.75rem 0.75rem;
 }
 
 .info-details {
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +273,26 @@ body {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.info-paragraph-small{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 2.7rem;
+    margin-top: 3rem;
+}
+
+.info-paragraph-small-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.info-paragraph-small-text{
+    width: 32rem;
 }
 
 .info-images {
@@ -284,11 +308,91 @@ body {
     border: 2px solid white;
     width: 225px;
     height: 127px;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .info-paragraph-link {
     color: white;
     text-decoration: underline;
+}
+
+.content-list{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-list-item{
+    height: 5rem;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-list-head{
+    width: 55px;
+}
+
+.content-list-logo{
+    text-decoration: none;
+    width: 45px;
+    margin: 0.5rem;
+}
+
+.content-list-name{
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    width: 175px;
+}
+
+.content-list-joined{
+    color: white;
+    text-align: right;
+    margin: 2rem 2rem 2rem 0;
+    font-size: large;
+}
+
+.content-list-item-identification{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 10px;
+}
+
+.content-list-datapack{
+    min-height: 5rem;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-list-datapack-text{
+    width: 43rem;
+    margin: 1rem;
+}
+
+.content-list-datapack-title{
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 4px 0;
+}
+
+.content-list-datapack-icon{
+    height: 3rem;
+    width: 2.9rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .impressum {
@@ -395,6 +499,12 @@ footer {
     .info-paragraph {
         width: 550px;
     }
+    .info-paragraph-small{
+        justify-content: center;
+    }
+    .info-paragraph-small-text{
+        width: 100%;
+    }
     .info-images {
         width: 550px;
         margin-top: 2.5rem;
@@ -403,6 +513,20 @@ footer {
     .discord-images {
         width: 550px;
         margin-top: 2.5rem;
+    }
+    .content-list-item{
+        height: auto;
+        align-items: flex-start;
+    }
+    .content-list-item-identification{
+        max-width: 270px;
+        flex-wrap: wrap;
+    }
+    .content-list-datapack-text{
+        width: 27.5rem;
+    }
+    .content-list-joined{
+        margin: 1.5rem 1.5rem 1.5rem 0;
     }
     .impressum {
         width: 550px;
@@ -446,6 +570,21 @@ footer {
     }
     .info-screenshot {
         width: 225px;
+    }
+    .content-list-datapack-text{
+        width: 100%;
+    }
+    .content-list-name{
+        font-size: large;
+        font-weight: 700;
+        width: 170px;
+    }
+    .content-list-item-identification{
+        max-width: 250px;
+    }
+    .content-list-joined{
+        margin: 1rem 1rem 1rem 0;
+        width: 85px;
     }
     .impressum {
         width: 375px;
@@ -491,10 +630,20 @@ footer {
         padding: 2rem 0;
         width: 300px;
     }
-    .below-link-item{
+    .below-link-box{
         padding-left: 1rem;
         padding-right: 1rem;
         min-width: 272px;
+    }
+    .content-list-datapack-text{
+        width: 100%;
+    }
+    .content-list-item-identification{
+        max-width: 175px;
+    }
+    .content-list-name{
+        max-width: 110px;
+        font-size: medium;
     }
     .impressum {
         width: 300px;
