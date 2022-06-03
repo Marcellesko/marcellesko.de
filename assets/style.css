@@ -47,7 +47,7 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .overtitle {
@@ -155,7 +155,7 @@ body {
     column-gap: 5rem;
 }
 
-.below-link-item {
+.below-link-box {
     margin-bottom: 4rem;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
     width: 335px;
@@ -183,26 +183,26 @@ body {
     width: 25px;
 }
 
-.below-link-item-links {
+.below-link-box-links {
     padding-top: 0.75rem;
     display: flex;
     flex-direction: column;
 }
 
-.below-link-item-link {
+.below-link-box-link {
     color: white;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
-.below-link-content {
+.below-link-content-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 
-.below-link-text {
+.below-link-content {
     color: white;
     text-decoration: none;
     font-weight: 700;
@@ -210,10 +210,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    height: 50px;
     max-width: 110px;
     padding: 0.15rem 0.35rem 0.15rem 0.35rem;
     margin: 0 0.2rem 0.25rem 0.2rem;
+}
+
+.below-link-content-text{
+    text-align: justify;
 }
 
 .social-media-logo {
@@ -223,8 +226,7 @@ body {
 }
 
 .info-details {
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +270,7 @@ body {
     color: white;
     font-size: 1.2rem;
     margin-bottom: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .info-images {
@@ -284,11 +286,61 @@ body {
     border: 2px solid white;
     width: 225px;
     height: 127px;
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .info-paragraph-link {
     color: white;
     text-decoration: underline;
+}
+
+.content-list{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content-list-item{
+    height: 75px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-list-head{
+    margin: 10px;
+    width: 55px;
+}
+
+.content-list-logo{
+    text-decoration: none;
+    margin: 10px;
+    width: 45px;
+}
+
+.content-list-name{
+    margin: 10px;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    width: 175px;
+}
+
+.content-list-joined{
+    color: white;
+    margin: 2rem;
+    font-size: large;
+}
+
+.content-list-item-identification{
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .impressum {
@@ -491,7 +543,7 @@ footer {
         padding: 2rem 0;
         width: 300px;
     }
-    .below-link-item{
+    .below-link-box{
         padding-left: 1rem;
         padding-right: 1rem;
         min-width: 272px;
