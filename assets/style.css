@@ -334,18 +334,16 @@ body {
 }
 
 .content-list-head{
-    margin: 10px;
     width: 55px;
 }
 
 .content-list-logo{
     text-decoration: none;
-    margin: 10px;
     width: 45px;
+    margin: 0.5rem;
 }
 
 .content-list-name{
-    margin: 10px;
     color: white;
     font-size: larger;
     font-weight: 700;
@@ -354,7 +352,8 @@ body {
 
 .content-list-joined{
     color: white;
-    margin: 2rem;
+    text-align: right;
+    margin: 2rem 2rem 2rem 0;
     font-size: large;
 }
 
@@ -362,6 +361,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 0.5rem;
+    margin: 10px;
 }
 
 .content-list-datapack{
@@ -375,7 +376,7 @@ body {
 }
 
 .content-list-datapack-text{
-    width: 85%;
+    width: 43rem;
     margin: 1rem;
 }
 
@@ -513,6 +514,20 @@ footer {
         width: 550px;
         margin-top: 2.5rem;
     }
+    .content-list-item{
+        height: auto;
+        align-items: flex-start;
+    }
+    .content-list-item-identification{
+        max-width: 270px;
+        flex-wrap: wrap;
+    }
+    .content-list-datapack-text{
+        width: 27.5rem;
+    }
+    .content-list-joined{
+        margin: 1.5rem 1.5rem 1.5rem 0;
+    }
     .impressum {
         width: 550px;
         margin-bottom: 2.5rem;
@@ -555,6 +570,21 @@ footer {
     }
     .info-screenshot {
         width: 225px;
+    }
+    .content-list-datapack-text{
+        width: 100%;
+    }
+    .content-list-name{
+        font-size: large;
+        font-weight: 700;
+        width: 170px;
+    }
+    .content-list-item-identification{
+        max-width: 250px;
+    }
+    .content-list-joined{
+        margin: 1rem 1rem 1rem 0;
+        width: 85px;
     }
     .impressum {
         width: 375px;
@@ -604,6 +634,16 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
         min-width: 272px;
+    }
+    .content-list-datapack-text{
+        width: 100%;
+    }
+    .content-list-item-identification{
+        max-width: 175px;
+    }
+    .content-list-name{
+        max-width: 110px;
+        font-size: medium;
     }
     .impressum {
         width: 300px;
