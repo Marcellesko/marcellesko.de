@@ -493,6 +493,10 @@ footer {
         font-size: 3.5rem;
         width: 550px;
     }
+    .linkbox {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
     .info-details {
         margin-bottom: 2rem;
     }
@@ -608,6 +612,7 @@ footer {
     }
     .info-header {
         width: 310px;
+       justify-content: center;
     }
     .info-paragraph {
         width: 300px;
