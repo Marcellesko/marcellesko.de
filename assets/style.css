@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     position: relative;
-    background-color: black;
+    background-color: #3A4437;
 }
 
 .page {
@@ -13,9 +13,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
 }
 
@@ -30,7 +28,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    background-color: #3A4437;
 }
 
 .hidden {
