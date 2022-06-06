@@ -25,14 +25,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-
     z-index: -1;
-
     background-image: url("./images/background_2_compressed.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
     overflow: hidden;
+    background-color: #3A4437;
 }
 
 .hidden {
