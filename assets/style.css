@@ -560,6 +560,9 @@ footer {
     .overtitle {
         font-size: 1.3rem;
     }
+    .overtitle-icon{
+        width: 15px;
+    }
     .info-title {
         text-align: center;
         font-size: 1.5rem;
@@ -616,6 +619,9 @@ footer {
     .overtitle {
         font-size: 1.1rem;
         margin-bottom: 1rem;
+    }
+    .overtitle-icon{
+        width: 13px;
     }
     .info-header {
         width: 310px;
