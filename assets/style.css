@@ -65,6 +65,7 @@ body {
     border-right: 0;
     line-height: 5rem;
     width: 800px;
+    height: 80px;
     margin-top: -0.5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -73,7 +74,7 @@ body {
 
 .maintitle-back {
     color: white;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .overtitle-back {
@@ -241,10 +242,7 @@ body {
 }
 
 .info-logo {
-    height: 50px;
-    width: 50px;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    width: 45px;
 }
 
 .info-title {
@@ -348,15 +346,17 @@ body {
 .content-list-name{
     color: white;
     font-size: larger;
+    text-shadow: none;
     font-weight: 700;
     width: 175px;
 }
 
 .content-list-joined{
     color: white;
-    text-align: right;
-    margin: 2rem 2rem 2rem 0;
     font-size: large;
+    text-align: right;
+    text-shadow: none;
+    margin: 2rem 2rem 2rem 0;
 }
 
 .content-list-item-identification{
