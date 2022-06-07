@@ -55,6 +55,10 @@ body {
     text-decoration: none;
 }
 
+.overtitle-icon{
+    width: 18px;
+}
+
 .maintitle {
     display: inline-block;
     font-size: 4rem;
