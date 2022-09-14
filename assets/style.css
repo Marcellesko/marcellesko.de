@@ -565,6 +565,9 @@ footer {
         margin: 0 1rem 2rem 1rem;
         font-size: 1rem;
     }
+    .info-paragraph-title{
+        max-width: 350px;
+    }
     .info-images {
         justify-content: center;
         gap: 1.5rem;
@@ -619,6 +622,9 @@ footer {
     .info-paragraph {
         width: 300px;
     }
+    .info-paragraph-title{
+    max-width: 275px;
+}
     .info-images {
         width: 300px;
     }
