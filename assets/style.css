@@ -316,6 +316,10 @@ body {
     box-shadow: 0 2px white;
 }
 
+.info-paragraph-list {
+    text-align: left;
+}
+
 .content-list{
     margin-top: 1rem;
     display: flex;
