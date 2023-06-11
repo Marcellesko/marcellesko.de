@@ -123,7 +123,6 @@ body{
 }
 
 .linkbox-item-logo{
-    width: 75px;
     height: 75px;
     margin-bottom: 0.5rem;
 }
@@ -132,7 +131,7 @@ body{
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.linkbox-info{
+.info-box{
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -146,8 +145,9 @@ body{
     width: 100%;
 }
 
-.linkbox-info-icon{
-    width: 25px;
+.info-icon{
+    height: 25px;
+    overflow: visible;
 }
 
 .below-links{
@@ -180,10 +180,6 @@ body{
     justify-content: center;
     gap: 0.5rem;
     height: 25px;
-}
-
-.below-link-title-icon{
-    width: 25px;
 }
 
 .below-link-box-links{
@@ -223,7 +219,6 @@ body{
 }
 
 .social-media-logo{
-    width: 45px;
     height: 45px;
 }
 
@@ -246,7 +241,7 @@ body{
 }
 
 .info-logo{
-    width: 45px;
+    height: 45px;
 }
 
 .info-title{
@@ -307,9 +302,9 @@ body{
 
 .info-screenshot{
     border: 2px solid white;
-    width: 225px;
-    height: 127px;
-    background-color: black;
+    width: 14rem;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .info-paragraph-link{
@@ -342,12 +337,12 @@ body{
 }
 
 .content-list-head{
-    width: 55px;
+    height: 55px;
 }
 
 .content-list-logo{
     text-decoration: none;
-    width: 45px;
+    height: 45px;
     margin: 0.5rem;
 }
 
@@ -396,11 +391,14 @@ body{
     color: white;
     font-size: 1.2rem;
     margin: 0 0 4px 0;
+    height: 1.5rem;
+    display: flex;
+    align-content: center;
+    gap: 0.75rem;
 }
 
 .content-list-datapack-icon{
-    height: 3rem;
-    width: 2.9rem;
+    width: 3rem;
     margin: 1rem;
     display: flex;
     align-items: center;
@@ -408,15 +406,32 @@ body{
 
 .wallpaper-list{
     margin-top: 4rem;
-    width: 133%;
+    width: 1003px;
 }
 
 .wallpaper-eye-icon{
     height: 1.25rem;
 }
 
-button{
-    outline: none;
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    gap: 0.75rem;
+}
+
+.dropdown{
+    height: 25px;
+    transform: rotate(0deg);
+}
+
+.arrow {
+    transition: transform .1s ease-in-out;
+}
+
+.active > .arrow {
+    transform: scaleY(-1);
 }
 
 .collapsible{
@@ -434,52 +449,138 @@ button{
     cursor: pointer;
 }
 
-.collapsible-box{
-    border: 2px solid white;
-    border-top: none;
-    background-color: rgba(0, 0, 0, 0.35);
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    width: 94%;
-    height: 0px;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.collapsible-content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin: 0.75rem;
-}
-
-.collapsible-inner{
+.collapsible-first{
     text-align: left;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem;
-    width: 90%;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapsible-box{
+    text-align: justify;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 1.25rem;
+    margin-left: 0.5rem;
+    width: 983px;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collapsible-box-first{
+    text-align: justify;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 1.25rem;
+    margin-left: 0.5rem;
+    width: 983px;
+    height: auto;
+    overflow: hidden;
+    visibility: unset;
+}
+
+.collapsible-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    color: white;
+    text-shadow: none;
+}
+
+.collapsible-inner{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    width: auto;
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.35);
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    margin: 0.75rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.collapsible-inner-first{
+    text-align: justify;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    width: auto;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
     margin-bottom: 0px;
 }
 
 .collapsible-box-inner{
+    text-align: justify;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
     border: 2px solid white;
     border-top: none;
     margin-bottom: 0.75rem;
-    margin-left: 1.25rem;
+    margin-left: 2.5rem;
     margin-right: 0.75rem;
     height: 0px;
-    width: 67%;
+    width: 75.5%;
     overflow: hidden;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.collapsible-box-inner-first{
+    border: 2px solid white;
+    border-top: none;
+    margin-bottom: 0.75rem;
+    margin-left: 2.5rem;
+    margin-right: 0.75rem;
+    height: auto;
+    width: 75.5%;
+    overflow: hidden;
+    visibility: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .collapsible-item{
@@ -490,15 +591,11 @@ button{
     width: 225px;
 }
 .collapsible-item-title{
+    color: white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     display: flex;
     justify-content: space-between;
-}
-
-.dropdown{
-    width: 25px;
-    transform: rotate(0deg);
 }
 
 .impressum{
@@ -575,6 +672,7 @@ footer{
     width: 100%;
     align-items: flex-end;
     text-align: center;
+    font-family: Arial, sans-serif;
     padding: .75rem 0 .75rem 0;
     background-color: rgba(255, 255, 255, 0.295);
     border-top: 2px solid rgb(225, 225, 225);
