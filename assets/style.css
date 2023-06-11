@@ -5,7 +5,7 @@ html{
 body{
     margin: 0;
     position: relative;
-    background-color: #313931;
+    background-color: rgb(75, 55, 36);
 }
 
 .page{
@@ -20,15 +20,22 @@ body{
 
 .background{
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-repeat: repeat;
+    border: 3px solid black;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
     z-index: -1;
-    background-image: url("./images/marcellesko_background_2.jpg");
+    background-image: url("./images/Perfect\ Base\ -\ Hobbit\ Hole\ -\ 2.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(3px) brightness(75%);
 }
 
 .ribbon{
@@ -302,8 +309,8 @@ body{
 
 .info-screenshot{
     border: 2px solid white;
-    width: 14rem;
-    height: auto;
+    min-width: 14rem;
+    min-height: 7.875rem;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -471,7 +478,7 @@ body{
     border: 2px solid white;
     border-top: none;
     background-color: rgba(0, 0, 0, 0.35);
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     margin-left: 0.5rem;
     width: 983px;
     height: 0px;
@@ -490,7 +497,7 @@ body{
     border: 2px solid white;
     border-top: none;
     background-color: rgba(0, 0, 0, 0.35);
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     margin-left: 0.5rem;
     width: 983px;
     height: auto;
@@ -689,6 +696,18 @@ footer{
     text-decoration: underline;
 }
 
+@media (max-width: 1000px){
+    .wallpaper-list{
+        max-width: 762px;
+    }
+    .collapsible-box-first{
+        max-width: 742px;
+    }
+    .collapsible-box{
+        max-width: 742px;
+    }
+}
+
 @media (max-width: 900px){
     .title{
         margin-top: 3rem;
@@ -736,6 +755,15 @@ footer{
     .content-list-joined{
         margin: 1.5rem 1.5rem 1.5rem 0;
     }
+    .wallpaper-list{
+        max-width: 522px;
+    }
+    .collapsible-box-first{
+        max-width: 502px;
+    }
+    .collapsible-box{
+        max-width: 502px;
+    }
     .impressum{
         width: 550px;
         margin-bottom: 2.5rem;
@@ -751,7 +779,7 @@ footer{
         margin-top: 2rem;
     }
     .maintitle{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         width: 375px;
     }
     .overtitle{
@@ -796,6 +824,15 @@ footer{
     .content-list-joined{
         margin: 1rem 1rem 1rem 0;
         width: 85px;
+    }
+    .wallpaper-list{
+        max-width: 280px;
+    }
+    .collapsible-box-first{
+        max-width: 260px;
+    }
+    .collapsible-box{
+        max-width: 260px;
     }
     .impressum{
         width: 375px;
