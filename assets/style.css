@@ -546,28 +546,6 @@ body{
     margin-bottom: 0px;
 }
 
-.collapsible-inner-first{
-    text-align: justify;
-    display: inline-block;
-    font-size: 1.2rem;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    padding: 1rem;
-    width: auto;
-    border: 2px solid white;
-    background-color: rgba(0, 10, 0, 0.75);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 2rem;
-    margin-right: 5rem;
-    margin-top: 1rem;
-    margin-bottom: 0px;
-}
-
 .collapsible-box-inner{
     text-align: justify;
     display: inline-block;
@@ -582,22 +560,6 @@ body{
     width: 75.5%;
     overflow: hidden;
     visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(0, 10, 0, 0.75);
-}
-
-.collapsible-box-inner-first{
-    border: 2px solid white;
-    margin-top: -2px;
-    margin-bottom: 0.75rem;
-    margin-left: 2.5rem;
-    margin-right: 0.75rem;
-    height: auto;
-    width: 75.5%;
-    overflow: hidden;
-    visibility: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -787,17 +749,7 @@ footer{
         margin-left: -2px;
         margin-right: -2px;
     }
-    .collapsible-inner-first{
-        margin-left: -2px;
-        margin-right: -2px;
-    }
     .collapsible-box-inner{
-
-        margin-left: -2px;
-        margin-right: -2px;
-        width: unset;
-    }
-    .collapsible-box-inner-first{
 
         margin-left: -2px;
         margin-right: -2px;
